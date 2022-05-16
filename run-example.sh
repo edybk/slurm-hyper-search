@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --account=<project>
+#SBATCH --account=surgical-handmarks
 #SBATCH --partition=small
 
-# export TMPDIR=/scratch/<project>/tmp
+# export TMPDIR=/scratch/surgical-handmarks/tmp
 
 DIR=$1
 PARAMS_OFFSET=$2
