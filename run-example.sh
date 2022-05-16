@@ -1,6 +1,20 @@
 #!/bin/bash
-#SBATCH --account=surgical-handmarks
-#SBATCH --partition=small
+
+#SBATCH --ntasks=1
+
+
+#SBATCH --gpus=1
+
+#SBATCH --qos=normal
+
+#SBATCH -t 12:00:00  # time requested in hour:minute:se
+
+eval "$(/home/bedward/anaconda3/bin/conda shell.bash hook)"
+conda activate surgical-landmarks
+
+which python
+
+# srun --container-image ~/nvidia+pytorch+21.11-py3.sqsh 
 
 # export TMPDIR=/scratch/surgical-handmarks/tmp
 
@@ -32,7 +46,10 @@ PARAMS=$(tail -n +${PARAMS_ID} ${PARAMS_FILE} | head -n 1)
 
 echo "*** TRAIN ***"
 MODEL_FILE=$(mktemp)
-myprog_train.py $PARAMS --output $MODEL_FILE
+
+python train.py --output-file $MODEL_FILE
+
+#-action train --model TCN2 --dataset apas_tcn_v2 --num_epochs 200 --features_dim 96 $PARAMS --split all --custom-features smooth_final --eval-rate 5 --output-file $MODEL_FILE
 
 # exit if training failed
 test $? -ne 0 && exit 1
@@ -42,7 +59,7 @@ echo "*** TEST ***"
 TMPFILE=$(mktemp)
 echo -n "$PARAMS_ID|$PARAMS|$JOB_NAME|$BN|" > $TMPFILE
 
-myprog_eval.py ${MODEL_FILE} | tr '\n\t' '| ' >> $TMPFILE
+python eval.py ${MODEL_FILE} | tr '\n\t' '| ' >> $TMPFILE
 echo >> $TMPFILE
 
 # only at the end we append it to the results file
@@ -51,3 +68,5 @@ cat $TMPFILE >> $RESULTS_FILE
 # cleanup
 rm $TMPFILE
 rm ${MODEL_FILE}
+
+
