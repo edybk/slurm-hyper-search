@@ -47,7 +47,11 @@ PARAMS=$(tail -n +${PARAMS_ID} ${PARAMS_FILE} | head -n 1)
 echo "*** TRAIN ***"
 MODEL_FILE=$(mktemp)
 
-python train.py --output-file $MODEL_FILE
+cd /home/bedward/workspace/eddie/surgical-handmarks
+python run.py --action train --model TCN2 --dataset apas_tcn_v2 --num_epochs 500 --features_dim 96 $PARAMS --split all --custom-features smooth_final --output-file $MODEL_FILE
+
+
+
 
 #-action train --model TCN2 --dataset apas_tcn_v2 --num_epochs 200 --features_dim 96 $PARAMS --split all --custom-features smooth_final --eval-rate 5 --output-file $MODEL_FILE
 
