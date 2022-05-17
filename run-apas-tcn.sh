@@ -48,12 +48,9 @@ echo "*** TRAIN ***"
 MODEL_FILE=$(mktemp)
 
 cd /home/bedward/workspace/eddie/surgical-handmarks
-python run.py --action train --model TCN2 --dataset apas_tcn_v2 --num_epochs 1 --features_dim 96 $PARAMS --split all --custom-features smooth_final --eval-rate 1 --output-file $MODEL_FILE
+python run.py --action train --model TCN2 --dataset apas_tcn_v2 --num_epochs 250 --features_dim 96 $PARAMS --split all --custom-features smooth_final --eval-rate 5 --output-file $MODEL_FILE
+# python run.py --action train --model TCN2 --dataset apas_tcn_v2 --num_epochs 250 --features_dim 96 $PARAMS --split all --custom-features smooth_final --eval-rate 5 --output-file $MODEL_FILE
 
-
-
-
-#-action train --model TCN2 --dataset apas_tcn_v2 --num_epochs 200 --features_dim 96 $PARAMS --split all --custom-features smooth_final --eval-rate 5 --output-file $MODEL_FILE
 
 # exit if training failed
 test $? -ne 0 && exit 1
