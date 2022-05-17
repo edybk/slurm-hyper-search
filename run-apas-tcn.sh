@@ -48,7 +48,7 @@ echo "*** TRAIN ***"
 MODEL_FILE=$(mktemp)
 
 cd /home/bedward/workspace/eddie/surgical-handmarks
-python run.py --action train --model TCN2 --dataset apas_tcn_v2 --num_epochs 500 --features_dim 96 $PARAMS --split all --custom-features smooth_final --output-file $MODEL_FILE
+python run.py --action train --model TCN2 --dataset apas_tcn_v2 --num_epochs 1 --features_dim 96 $PARAMS --split all --custom-features smooth_final --eval-rate 1 --output-file $MODEL_FILE
 
 
 
@@ -63,6 +63,7 @@ echo "*** TEST ***"
 TMPFILE=$(mktemp)
 echo -n "$PARAMS_ID|$PARAMS|$JOB_NAME|$BN|" > $TMPFILE
 
+cd slurm/slurm-hyper-search
 python eval.py ${MODEL_FILE} | tr '\n\t' '| ' >> $TMPFILE
 echo >> $TMPFILE
 

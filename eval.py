@@ -19,7 +19,7 @@ with open(args.output_file, 'r') as f:
             continue
         tokens = line.split(",")
         metric = tokens[0]
-        value=tokens[2]
+        value=float(tokens[2])
         if metric == 'mean':
             split_means.append(value)
         elif metric == 'std':

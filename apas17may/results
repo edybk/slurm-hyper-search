@@ -1,0 +1,2 @@
+1|--num_layers_R=3 --num_layers_PG=11 --num_f_maps=256 --num_R=3 --lr=0.01|56518_1||
+1|--num_layers_R=3 --num_layers_PG=11 --num_f_maps=256 --num_R=3 --lr=0.01|56519_1||mean 37.157333424969366|std 2.159690765114624|
