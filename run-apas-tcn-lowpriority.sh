@@ -5,9 +5,9 @@
 
 #SBATCH --gpus=1
 
-#SBATCH --qos=normal
+#SBATCH --qos=basic
 
-#SBATCH -t 12:00:00  # time requested in hour:minute:se
+#SBATCH -t 24:00:00  # time requested in hour:minute:se
 
 eval "$(/home/bedward/anaconda3/bin/conda shell.bash hook)"
 conda activate surgical-landmarks
@@ -48,7 +48,7 @@ echo "*** TRAIN ***"
 MODEL_FILE=$(mktemp)
 
 cd /home/bedward/workspace/eddie/surgical-handmarks
-python run.py --action train --model TCN2 --dataset apas_tcn_v2 --num_epochs 300 --features_dim 96 $PARAMS --split all --custom-features smooth_final --eval-rate 5 --output-file $MODEL_FILE
+python run.py --action train --model TCN2 --dataset apas_tcn_v2 --num_epochs 200 --features_dim 96 $PARAMS --split all --custom-features smooth_final --eval-rate 5 --output-file $MODEL_FILE
 # python run.py --action train --model TCN2 --dataset apas_tcn_v2 --num_epochs 500 --features_dim 96 $PARAMS --split all --custom-features smooth_final --eval-rate 5 --output-file $MODEL_FILE
 
 

@@ -1,0 +1,8 @@
+6|--num_layers_R=6 --num_layers_PG=3 --num_f_maps=32 --num_R=5 --lr=0.005|56695_6||mean 77.06262890427317|std 2.2995256400217734|
+17|--num_layers_R=3 --num_layers_PG=3 --num_f_maps=128 --num_R=3 --lr=0.0005|56695_17||mean 65.17022866387804|std 2.674141490125034|
+7|--num_layers_R=6 --num_layers_PG=15 --num_f_maps=64 --num_R=5 --lr=0.005|56695_7||mean 80.70363639910093|std 2.393269508793438|
+16|--num_layers_R=6 --num_layers_PG=7 --num_f_maps=64 --num_R=5 --lr=0.005|56695_16||mean 79.54378658609181|std 2.7390092833583357|
+12|--num_layers_R=10 --num_layers_PG=15 --num_f_maps=64 --num_R=3 --lr=0.005|56695_12||mean 80.99459177786379|std 2.0458614606592045|
+14|--num_layers_R=10 --num_layers_PG=7 --num_f_maps=128 --num_R=3 --lr=0.005|56695_14||mean 74.69247020807491|std 13.286647699476324|
+27|--num_layers_R=6 --num_layers_PG=11 --num_f_maps=64 --num_R=3 --lr=0.005|56695_27||mean 78.35210337506639|std 3.878709120517052|
+11|--num_layers_R=10 --num_layers_PG=15 --num_f_maps=128 --num_R=1 --lr=0.0005|56695_11||mean 80.76055937775884|std 2.3537225748703827|

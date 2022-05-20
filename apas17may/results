@@ -1,2 +1,16 @@
 1|--num_layers_R=3 --num_layers_PG=11 --num_f_maps=256 --num_R=3 --lr=0.01|56518_1||
 1|--num_layers_R=3 --num_layers_PG=11 --num_f_maps=256 --num_R=3 --lr=0.01|56519_1||mean 37.157333424969366|std 2.159690765114624|
+8|--num_layers_R=14 --num_layers_PG=7 --num_f_maps=64 --num_R=1 --lr=0.005|56522_8||mean 80.66818663554224|std 3.0598702971729494|
+2|--num_layers_R=6 --num_layers_PG=3 --num_f_maps=64 --num_R=1 --lr=0.005|56522_2||mean 74.23975724467964|std 3.2956004141898942|
+5|--num_layers_R=3 --num_layers_PG=11 --num_f_maps=128 --num_R=5 --lr=0.005|56522_5||mean 70.2428149617541|std 17.77082472686414|
+17|--num_layers_R=6 --num_layers_PG=7 --num_f_maps=64 --num_R=1 --lr=0.005|56522_17||mean 78.42977021831084|std 3.0706123856303646|
+13|--num_layers_R=3 --num_layers_PG=11 --num_f_maps=64 --num_R=1 --lr=0.005|56522_13||mean 81.15872352593111|std 2.713198648804731|
+15|--num_layers_R=6 --num_layers_PG=11 --num_f_maps=32 --num_R=1 --lr=0.0005|56522_15||mean 79.43660121394255|std 3.1268064197917953|
+14|--num_layers_R=10 --num_layers_PG=7 --num_f_maps=64 --num_R=5 --lr=0.01|56522_14||mean 57.1649616477597|std 13.237876810021438|
+20|--num_layers_R=3 --num_layers_PG=7 --num_f_maps=64 --num_R=3 --lr=0.005|56522_20||mean 78.05104086805598|std 2.4614959587398606|
+11|--num_layers_R=6 --num_layers_PG=15 --num_f_maps=64 --num_R=3 --lr=0.01|56522_11||mean 71.3006969619806|std 13.187083565028772|
+19|--num_layers_R=10 --num_layers_PG=15 --num_f_maps=64 --num_R=3 --lr=0.01|56522_19||mean 65.7149551975255|std 16.91081194885955|
+21|--num_layers_R=14 --num_layers_PG=15 --num_f_maps=32 --num_R=1 --lr=0.01|56522_21||mean 74.94545857793346|std 6.516647098741468|
+22|--num_layers_R=10 --num_layers_PG=11 --num_f_maps=64 --num_R=3 --lr=0.0005|56522_22||mean 80.61132496341166|std 2.563428779829884|
+34|--num_layers_R=6 --num_layers_PG=3 --num_f_maps=64 --num_R=3 --lr=0.01|56522_34||mean 62.927161386747436|std 12.345324053379937|
+32|--num_layers_R=3 --num_layers_PG=3 --num_f_maps=32 --num_R=5 --lr=0.01|56522_32||mean 61.52555134767245|std 3.571320712504152|

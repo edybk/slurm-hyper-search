@@ -1,0 +1,15 @@
+2|--num_layers_R=14 --num_layers_PG=7 --num_f_maps=128 --num_R=1 --lr=0.005|57053_2||mean 78.4544133483885|std 2.3878564197482404|
+10|--num_layers_R=10 --num_layers_PG=11 --num_f_maps=256 --num_R=3 --lr=0.0005|57053_10||mean 81.5303260218918|std 2.7505162162093897|
+16|--num_layers_R=6 --num_layers_PG=11 --num_f_maps=128 --num_R=6 --lr=0.001|57053_16||mean 80.88406568544808|std 2.5941716178116416|
+13|--num_layers_R=6 --num_layers_PG=7 --num_f_maps=256 --num_R=3 --lr=0.001|57053_13||mean 80.66540488541217|std 3.454353550055081|
+17|--num_layers_R=6 --num_layers_PG=7 --num_f_maps=128 --num_R=3 --lr=0.0001|57053_17||mean 73.03597122492927|std 3.6019511472935255|
+15|--num_layers_R=10 --num_layers_PG=30 --num_f_maps=64 --num_R=1 --lr=0.001|57053_15||mean 81.28105463527669|std 2.6970857670655777|
+12|--num_layers_R=14 --num_layers_PG=11 --num_f_maps=32 --num_R=12 --lr=0.005|57053_12||mean 80.06621947639128|std 2.4851666090439215|
+23|--num_layers_R=6 --num_layers_PG=7 --num_f_maps=64 --num_R=3 --lr=0.0005|57053_23||mean 77.14674519152847|std 3.129990060911559|
+19|--num_layers_R=10 --num_layers_PG=30 --num_f_maps=64 --num_R=1 --lr=0.0005|57053_19||mean 81.20844721203092|std 2.6056444825926706|
+21|--num_layers_R=10 --num_layers_PG=7 --num_f_maps=64 --num_R=3 --lr=0.005|57053_21||mean 81.84972951042182|std 2.414447661779788|
+27|--num_layers_R=10 --num_layers_PG=15 --num_f_maps=128 --num_R=1 --lr=0.005|57053_27||mean 80.76455772108282|std 2.0689200685942404|
+31|--num_layers_R=10 --num_layers_PG=11 --num_f_maps=64 --num_R=1 --lr=0.001|57053_31||mean 82.04105019945163|std 3.2799884707898697|
+33|--num_layers_R=10 --num_layers_PG=11 --num_f_maps=64 --num_R=1 --lr=0.005|57053_33||mean 81.19130114548008|std 2.548793270091634|
+25|--num_layers_R=6 --num_layers_PG=15 --num_f_maps=64 --num_R=12 --lr=0.0001|57053_25||mean 76.75896404022598|std 2.2441125893241964|
+24|--num_layers_R=10 --num_layers_PG=30 --num_f_maps=32 --num_R=6 --lr=0.001|57053_24||mean 81.52515916166884|std 2.5647921402436378|
