@@ -15,6 +15,6 @@ conda activate surgical-landmarks
 PARAMS=$1
 
 cd /home/bedward/workspace/eddie/surgical-handmarks
-python run.py $params
+python run.py $PARAMS
 
 
